@@ -1,0 +1,252 @@
+html {
+  font-size: 10px;
+}
+
+.wrapper {
+  max-height: 100vh;
+  width: fit-content;
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 1.6rem;
+}
+
+body {
+  background: linear-gradient(135deg, hsl(0deg, 0%, 100%), hsl(0deg, 100%, 98%));
+  font-family: "Josefin Sans", sans-serif;
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  max-width: 100rem;
+}
+
+.body__image {
+  display: flex;
+}
+
+.body__logo {
+  display: inline-flex;
+  margin: 3rem;
+}
+.body__logo .logo--img {
+  height: auto;
+  width: 70%;
+}
+
+.img-main {
+  width: 100vw;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+.img-main-desktop {
+  display: none;
+  object-fit: cover;
+}
+
+h1 {
+  margin: 5rem 0 2.5rem;
+  font-size: 4rem;
+  text-align: center;
+  line-height: 1.1;
+  letter-spacing: 1.1rem;
+}
+
+.main-text {
+  width: fit-content;
+  padding: 0 1.8rem;
+}
+.main-text p {
+  color: hsl(0deg, 36%, 70%);
+  text-align: center;
+  height: 100%;
+  line-height: 2.2rem;
+  margin-bottom: 3rem;
+  width: 100%;
+}
+
+.title--brown {
+  color: hsl(0deg, 36%, 70%);
+  font-weight: 300;
+  font-size: 4rem;
+}
+
+.email-div {
+  display: flex;
+  justify-content: center;
+  margin: 2rem -2.4rem 1rem 2rem;
+  padding-right: 2rem;
+}
+.email-div .email {
+  background-color: inherit;
+  border-radius: 5rem;
+  border-width: 0.2px;
+  border-color: hsl(0deg, 36%, 70%);
+  padding: 1.5rem;
+  width: 100%;
+}
+.email-div .email::placeholder {
+  color: hsl(0deg, 36%, 80%);
+  font-family: "Josefin Sans", sans-serif;
+  padding-left: 1rem;
+  font-size: 1.3rem;
+}
+.email-div .email:focus {
+  border-color: red;
+}
+.email-div .email-submit {
+  border-radius: 43%;
+  border: none;
+  background: linear-gradient(to right, hsl(0deg, 93%, 88%), hsl(0deg, 93%, 75%));
+  box-shadow: 0 2rem 3rem hsl(0deg, 93%, 90%);
+  font-size: 2rem;
+  padding: 0 2.8rem;
+  margin-left: -5rem;
+  z-index: 2;
+}
+.email-div .email-submit:hover, .email-div .email-submit:active {
+  background-image: none;
+  background: linear-gradient(to right, hsl(0deg, 93%, 88%), hsl(0deg, 93%, 83%));
+  box-shadow: 0 2rem 1.5rem hsla(0deg, 92%, 90%, 0.671);
+}
+.email-div .email-submit:active {
+  transform: translateY(0.1rem);
+}
+.email-div .email-submit .logo-arrow {
+  display: flex;
+  vertical-align: center;
+}
+
+.email::before {
+  content: url("images/icon-error.svg");
+}
+
+.email:focus {
+  outline: none;
+  border-color: red;
+}
+
+i {
+  display: flex;
+  visibility: hidden;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 3;
+  position: relative;
+  transform: translateX(-13rem);
+}
+
+.validationtext {
+  padding: 0 1.8rem;
+}
+
+@media (min-width: 500px) {
+  .body__logo .logo--img {
+    height: auto;
+    width: 100%;
+  }
+}
+@media (min-width: 650px) and (max-width: 1024px) {
+  .wrapper > * {
+    max-width: 650px;
+  }
+}
+@media (min-width: 1024px) {
+  main {
+    padding: 0 9rem;
+  }
+  h1, .title--brown {
+    font-size: 6.5rem;
+  }
+  h1, .main-text p {
+    text-align: left;
+    margin: 0;
+  }
+  .main-message {
+    margin: 0 0 2rem;
+  }
+  .main-text {
+    margin: 0;
+    padding: 0;
+  }
+  header {
+    margin-top: -10rem;
+  }
+  .body__logo {
+    margin: 0 9rem;
+  }
+  .body__logo .logo--img {
+    height: auto;
+    width: 100%;
+  }
+  .wrapper {
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow: none;
+  }
+  .desktop-text-section {
+    background-image: url("images/bg-pattern-desktop.svg"), linear-gradient(135deg, hsl(0deg, 0%, 100%), hsl(0deg, 100%, 98%));
+    background-repeat: round;
+    max-width: 100rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+}
+@media (min-width: 1024px) and (min-width: 1240px) {
+  main {
+    padding: 0 15.5rem;
+  }
+  .body__logo {
+    margin: 0 15.5rem;
+  }
+}
+@media (min-width: 1024px) {
+  .img-main {
+    display: none;
+  }
+}
+@media (min-width: 1024px) {
+  .img-main-desktop {
+    display: flex;
+  }
+}
+@media (min-width: 1024px) {
+  .desktop-image-section {
+    display: inline-flex;
+  }
+}
+@media (min-width: 1024px) {
+  .email-div {
+    margin: 2rem -2.4rem 2rem 0;
+  }
+  .email-div .email-submit {
+    border-radius: 5rem;
+    padding: 0 4rem;
+  }
+}
+@media (min-width: 1024px) and (min-width: 1440px) {
+  main {
+    padding: 0 21.5rem;
+  }
+  .body__logo {
+    margin-left: 21.5rem;
+  }
+}
+@media (min-width: 1024px) and (min-width: 2000px) {
+  .wrapper {
+    transform: scale(1.1);
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
