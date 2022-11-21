@@ -6,19 +6,21 @@ const errorIcon = document.querySelector("i");
 submitButton.addEventListener("click", function() {
 
     let emailValue = document.querySelector("input").value;
+    let mailFormat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 
-    if (emailValue.includes("@") !== true || emailValue.includes(".") !== true)
+    if (emailValue.match(mailFormat))
     {
+        emailField.value = "";
+        emailField.style.border = "";
+        validationText.innerHTML ="";
+        errorIcon.style.visibility = "hidden"    
+ 
+}   else {
+ 
     validationText.innerHTML = "Please provide a valid email";
     validationText.style.color = "red"
     errorIcon.style.visibility = "visible"
     emailField.style.border = "2px solid red"
- 
-}   else {
-    emailField.value = "";
-    emailField.style.border = "";
-    validationText.innerHTML ="";
-    errorIcon.style.visibility = "hidden"
 }
 }
 

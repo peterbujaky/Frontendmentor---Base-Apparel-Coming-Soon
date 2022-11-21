@@ -1,3 +1,4 @@
+/* Body */
 html {
   font-size: 10px;
 }
@@ -24,10 +25,6 @@ body {
   align-items: center;
 }
 
-main {
-  max-width: 100rem;
-}
-
 .body__image {
   display: flex;
 }
@@ -36,7 +33,7 @@ main {
   display: inline-flex;
   margin: 3rem;
 }
-.body__logo .logo--img {
+.body__logo .logo__img {
   height: auto;
   width: 70%;
 }
@@ -58,6 +55,11 @@ h1 {
   text-align: center;
   line-height: 1.1;
   letter-spacing: 1.1rem;
+}
+
+main {
+  max-width: 100rem;
+  margin-bottom: 5rem;
 }
 
 .main-text {
@@ -82,7 +84,7 @@ h1 {
 .email-div {
   display: flex;
   justify-content: center;
-  margin: 2rem -2.4rem 1rem 2rem;
+  margin: 4rem -4.8rem 1rem 0;
   padding-right: 2rem;
 }
 .email-div .email {
@@ -141,11 +143,15 @@ i {
   justify-content: center;
   z-index: 3;
   position: relative;
-  transform: translateX(-13rem);
+  transform: translateX(-10.5rem);
 }
 
 .validationtext {
   padding: 0 1.8rem;
+}
+
+footer {
+  margin-top: 5rem;
 }
 
 @media (min-width: 500px) {
@@ -178,12 +184,12 @@ i {
     padding: 0;
   }
   header {
-    margin-top: -10rem;
+    margin-bottom: 4.5rem;
   }
   .body__logo {
     margin: 0 9rem;
   }
-  .body__logo .logo--img {
+  .body__logo .logo__img {
     height: auto;
     width: 100%;
   }
@@ -201,6 +207,12 @@ i {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+  }
+  .desktop-image-section {
+    max-height: inherit;
+  }
+  i {
+    transform: translateX(-13rem);
   }
 }
 @media (min-width: 1024px) and (min-width: 1240px) {
@@ -227,20 +239,25 @@ i {
   }
 }
 @media (min-width: 1024px) {
-  .email-div {
-    margin: 2rem -2.4rem 2rem 0;
-  }
   .email-div .email-submit {
     border-radius: 5rem;
     padding: 0 4rem;
   }
 }
-@media (min-width: 1024px) and (min-width: 1440px) {
+@media (min-width: 1024px) and (min-width: 1420px) {
   main {
-    padding: 0 21.5rem;
+    padding: 0 20rem;
   }
   .body__logo {
-    margin-left: 21.5rem;
+    margin-left: 20rem;
+  }
+}
+@media (min-width: 1024px) and (min-width: 1510px) {
+  main {
+    padding: 0 28rem;
+  }
+  .body__logo {
+    margin-left: 28rem;
   }
 }
 @media (min-width: 1024px) and (min-width: 2000px) {
