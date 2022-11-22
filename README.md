@@ -36,6 +36,8 @@ Users should be able to:
 
 I learned a great deal of CSS during this challenge, as the description stated there were some interesting details to pay a keen eye to. I have also learned how to use email validation during this challenge.
 
+To see how you can add code snippets, see below:
+
 ### Continued development
 
 Improve on time, and writing cleaner code.

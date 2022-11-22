@@ -66,7 +66,7 @@ h1 {
     font-size: 4rem;
     text-align: center;
     line-height: 1.1;
-    letter-spacing: 1.1rem;
+    letter-spacing: 1.3rem;
 }
 
 // Main Text Section
@@ -84,7 +84,7 @@ main {
             color: $color-primary-red-dark;
             text-align: center;
             height: 100%;
-            line-height: 2.2rem;
+            line-height: 3rem;
             margin-bottom: 3rem;
             width: 100%;
         }
@@ -102,13 +102,14 @@ main {
 .email-div {
     display: flex;
     justify-content: center;
-    margin: 4rem -4.8rem 1rem 0;
+    margin: 4rem -4.8rem 3rem 0;
     padding-right: 2rem;
 
     .email {
         background-color: inherit;
         border-radius: 5rem;
-        border-width: .2px;
+        border-style: dotted;
+        border-width: .1px;
         border-color: $color-primary-red-dark;
         padding: 1.5rem;
         width: 100%;
@@ -201,7 +202,7 @@ main {
 
     
         main {
-            padding: 0 9rem;
+            padding: 0 7rem;
         }
 
         h1, .title--brown {
@@ -287,6 +288,7 @@ main {
 
         
         .email-div {
+            margin-bottom: 1.5rem;
             .email-submit {
                 border-radius: 5rem;
                 padding: 0 4rem;
